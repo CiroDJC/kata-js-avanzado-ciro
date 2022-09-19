@@ -1,4 +1,19 @@
-// PETICIONES
+const http = require('http');
+
+const server = http.createServer((request, response) => {
+    const status = 200; // OK
+    const mimeType = { 'Content-Type' : 'text/html' };
+    response.writeHead(status, mimeType);
+    response.write('<html> <body> Hola shavos! </body> </html>');
+    response.end();
+});
+
+server.listen(8000);
+console.log('el servidor fue iniciado...');
+
+
+/*
+ // PETICIONES
 // localhost:8080/index.html
 
 const http = require('http');
@@ -78,3 +93,5 @@ const server = http.createServer((request, response) => {
 server.listen(9000);
 console.log('API en node...'.rainbow);
 console.log('Esperando peticiones....'.yellow);
+
+*/

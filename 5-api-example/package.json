@@ -1,16 +1,18 @@
 {
-  "name": "media-server",
+  "name": "shoes-api",
   "version": "1.0.0",
-  "description": "Ejercicio de servidor multimedia estatico",
+  "description": "Esta es mi primer api sobre shoes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "nodemon ./src/index.js"
   },
-  "author": "devf.montoyoyitag",
+  "author": "montoyaguzman7",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
     "colors": "^1.4.0",
     "nodemon": "^2.0.19"
   }
